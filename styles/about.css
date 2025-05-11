@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+.cta-active {
+  transform: scale(1.2);
+}
+
+.cta-hover {
+  box-shadow: 5px 5px 10px rgb(0, 220, 170);
+}
+
+.progress-hover {
+  border: 2px solid white;
+  border-radius: inherit;
+  cursor: pointer;
+}
+
+.border-decor-default {
+  border-color: rgb(0, 255, 195);
+}
+
+.border-decor-dark {
+  border-color: rgb(0, 220, 170);
+}
+
+.border-decor-light {
+  border-color: rgba(0, 255, 195, 0.3);
+}
+
+#to-top {
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  padding: 0.25rem 0.5rem;
+  bottom: 2rem;
+  right: 2rem;
+  border-radius: 20px;
+  background-color: rgb(0, 255, 195);
+  color: white;
+  transition: all 0.2s ease;
+  box-shadow: 2.5px 2.5px 5px rgb(0, 220, 170);
+}
+#to-top:hover {
+  box-shadow: 5px 5px 10px rgb(0, 220, 170);
+}
+#to-top a {
+  text-decoration: none;
+  color: inherit;
+}
+#to-top span {
+  display: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+body div#navbar-container {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 5;
+}
+body div#navbar-container nav#navbar {
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+body div#navbar-container nav#navbar ul {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+body div#navbar-container nav#navbar ul li.nav-item {
+  list-style-type: none;
+  margin: 1rem 2rem;
+}
+body div#navbar-container nav#navbar ul li.nav-item.active a {
+  color: rgb(0, 220, 170);
+  font-weight: bold;
+  border-bottom: 2px solid rgb(0, 255, 195);
+  padding-bottom: 0.25rem;
+}
+body div#navbar-container nav#navbar ul a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+body div#navbar-container nav#navbar ul a:hover {
+  color: rgb(0, 255, 195);
+}
+
+.about-content {
+  padding: 2rem 5%;
+  max-width: 900px;
+  margin: 2rem auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.about-content h1 {
+  font-size: 2.5rem;
+  color: rgb(0, 220, 170);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.about-content h2 {
+  font-size: 1.8rem;
+  color: #00a983;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 2px solid rgba(0, 255, 195, 0.3);
+  padding-bottom: 0.25rem;
+}
+.about-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .about-content {
+    padding: 1.5rem 3%;
+  }
+  .about-content h1 {
+    font-size: 2rem;
+  }
+  .about-content h2 {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=about.css.map */

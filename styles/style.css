@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+.cta-active {
+  transform: scale(1.2);
+}
+
+.cta-hover {
+  box-shadow: 5px 5px 10px rgb(0, 220, 170);
+}
+
+.progress-hover {
+  border: 2px solid white;
+  border-radius: inherit;
+  cursor: pointer;
+}
+
+.border-decor-default {
+  border-color: rgb(0, 255, 195);
+}
+
+.border-decor-dark {
+  border-color: rgb(0, 220, 170);
+}
+
+.border-decor-light {
+  border-color: rgba(0, 255, 195, 0.3);
+}
+
+#to-top {
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  padding: 0.25rem 0.5rem;
+  bottom: 2rem;
+  right: 2rem;
+  border-radius: 20px;
+  background-color: rgb(0, 255, 195);
+  color: white;
+  transition: all 0.2s ease;
+  box-shadow: 2.5px 2.5px 5px rgb(0, 220, 170);
+}
+#to-top:hover {
+  box-shadow: 5px 5px 10px rgb(0, 220, 170);
+}
+#to-top a {
+  text-decoration: none;
+  color: inherit;
+}
+#to-top span {
+  display: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+body div#navbar-container {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 5;
+}
+body div#navbar-container nav#navbar {
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+body div#navbar-container nav#navbar ul {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+body div#navbar-container nav#navbar ul li.nav-item {
+  list-style-type: none;
+  margin: 1rem 2rem;
+}
+body div#navbar-container nav#navbar ul li.nav-item.active a {
+  color: rgb(0, 220, 170);
+  font-weight: bold;
+  border-bottom: 2px solid rgb(0, 255, 195);
+  padding-bottom: 0.25rem;
+}
+body div#navbar-container nav#navbar ul a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+body div#navbar-container nav#navbar ul a:hover {
+  color: rgb(0, 255, 195);
+}
+
+body main section.intro {
+  padding: 2rem 0;
+  min-height: 70vh;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+body main section.intro div {
+  flex: 0 1 450px;
+}
+body main section.intro div.info {
+  padding: 1rem;
+}
+body main section.intro div.info h1 {
+  font-size: 3.5rem;
+}
+body main section.intro div.info h2 {
+  font-size: 1rem;
+}
+body main section.intro div.info a {
+  color: white;
+  background-color: rgb(0, 255, 195);
+  padding: 0.25rem 0.5rem;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 2rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+body main section.intro div.info a:hover {
+  transform: scale(1.2);
+}
+body main section.intro div.main-profile-img img {
+  width: 100%;
+  height: auto;
+}
+body main section.about-me {
+  padding: 5rem 0;
+  background-color: rgba(0, 255, 195, 0.3);
+}
+body main section.about-me section.description {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+body main section.about-me section.description p {
+  font-size: 1rem;
+}
+body main section.about-me section.description h2 {
+  font-size: 2rem;
+}
+body main section.about-me section.description .progress-bar-area p.skill {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+body main section.resume {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+body main section.resume section.table {
+  flex: 1 0 500px;
+  padding: 2rem;
+  background-color: transparent !important;
+}
+body main section.resume section.table table {
+  border-collapse: collapse;
+}
+body main section.resume section.table table col.resume-property {
+  width: 20%;
+}
+body main section.resume section.table table col.resume-value {
+  width: 80%;
+}
+body main section.resume section.table table tr {
+  border-bottom: 2px solid gray;
+  transition: all 0.2s ease;
+}
+body main section.resume section.table table tr:hover {
+  background-color: rgba(0, 255, 195, 0.3);
+}
+body main section.resume section.table table tr td {
+  padding: 1rem;
+}
+body main section.resume section.table table tr td li {
+  list-style-position: inside;
+}
+body main section.resume section.resume-image {
+  flex: 0 1 450px;
+  max-width: 450px;
+  padding: 0 2rem;
+  position: relative;
+}
+body main section.resume section.resume-image img {
+  width: 100%;
+  height: auto;
+}
+body main section.resume section.resume-image div.green-rect {
+  border: 10px solid rgba(0, 255, 195, 0.3);
+  position: absolute;
+  z-index: -1;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: linear;
+}
+body main section.resume section.resume-image div#green-rect-1 {
+  border-color: rgb(0, 255, 195);
+  left: -20px;
+  width: 90%;
+  height: 90%;
+  animation-name: color-rotation-1;
+}
+body main section.resume section.resume-image div#green-rect-2 {
+  border-color: rgb(0, 220, 170);
+  top: -20px;
+  right: 10px;
+  width: 80%;
+  height: 90%;
+  animation-name: color-rotation-2;
+}
+body main section.resume section.resume-image div#green-rect-3 {
+  top: 20px;
+  right: -10px;
+  width: 100%;
+  height: 100%;
+  animation-name: color-rotation-3;
+}
+@keyframes color-rotation-1 {
+  0% {
+    border-color: rgb(0, 255, 195);
+  }
+  20% {
+    border-color: rgb(0, 220, 170);
+  }
+  40% {
+    border-color: rgba(0, 255, 195, 0.3);
+  }
+  60% {
+    border-color: rgb(0, 255, 195);
+  }
+  80% {
+    border-color: rgba(0, 255, 195, 0.3);
+  }
+  100% {
+    border-color: rgb(0, 220, 170);
+  }
+}
+@keyframes color-rotation-2 {
+  0% {
+    border-color: rgb(0, 220, 170);
+  }
+  20% {
+    border-color: rgba(0, 255, 195, 0.3);
+  }
+  40% {
+    border-color: rgb(0, 255, 195);
+  }
+  60% {
+    border-color: rgb(0, 220, 170);
+  }
+  80% {
+    border-color: rgb(0, 255, 195);
+  }
+  100% {
+    border-color: rgba(0, 255, 195, 0.3);
+  }
+}
+@keyframes color-rotation-3 {
+  0% {
+    border-color: rgba(0, 255, 195, 0.3);
+  }
+  20% {
+    border-color: rgb(0, 255, 195);
+  }
+  40% {
+    border-color: rgb(0, 220, 170);
+  }
+  60% {
+    border-color: rgba(0, 255, 195, 0.3);
+  }
+  80% {
+    border-color: rgb(0, 220, 170);
+  }
+  100% {
+    border-color: rgb(0, 255, 195);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body nav ul {
+    justify-content: center;
+  }
+  body main section.about-me section.description {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 500px) {
+  body nav {
+    position: static;
+  }
+  body nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  body main section.intro div.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  body main section.intro div.info #cta-learn-more {
+    align-self: center;
+  }
+  body main section.resume {
+    gap: 2rem;
+  }
+  body main section.resume section.table {
+    flex: 1 1 100%;
+    padding: 0;
+    overflow-x: scroll;
+  }
+  body main section.resume section.table table {
+    min-width: 400px;
+  }
+}/*# sourceMappingURL=style.css.map */
