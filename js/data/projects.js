@@ -2,8 +2,8 @@ export const projects = [
   {
     title: "Project 1",
     description:
-      "This is a description of project 1. It includes details about the project, its goals, and its outcomes.",
-    demoLink: "https://example.com",
-    githubLink: "https://github.com",
+      "Risk and Ruin, our text adventure game created by HTML, CSS, and JavaScript. Also are the most popular text adventure created in 2025.",
+    demoLink: "https://riskandruin.netlify.app/",
+    githubLink: "https://github.com/CartWebApp/project-adventure-usurper-frank-the-x-esquire-dev-team",
   },
 ];
