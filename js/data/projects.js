@@ -24,7 +24,7 @@ export const projects = [
     title: "Project 4",
     description:
       "Trion Supercars, We as a employer that designed and scatch out an website as a group.",
-    demoLink: "https://example.com/",
+    demoLink: "https://jack-and-lukas-supercar-website.netlify.app/",
     githubLink: "https://github.com/LukasDekan/fork-supercar-website-pm-team-trion-web",
   },
   {
