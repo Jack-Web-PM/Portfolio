@@ -13,8 +13,4 @@ export const techStacks = [
     name: "JavaScript",
     icon: `${ICON_BASE}javascript.svg`,
   },
-  {
-    name: "Git",
-    icon: `${ICON_BASE}git.svg`,
-  },
 ];
